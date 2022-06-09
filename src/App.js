@@ -1,5 +1,5 @@
 import React from "react";
-
+import bgImage from "./image/bgImage.jpeg";
 import "./App.css";
 import Moviepage from "./component/Moviepage";
 

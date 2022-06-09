@@ -9,11 +9,43 @@ li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: green;
+.App {
+  background-image: url("./image/bgImage.jpeg");
+  height: 100vh;
+  width: 100vw;
 }
 
-.App {
+.pagetitle {
+  color: red;
   text-align: center;
+  font-size: 80px;
+}
+
+.description {
+  color: blue;
+  margin: 80px 40px 0 40px;
+  font-size: 30px;
+}
+
+.starshiplist {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  margin: 60px 40px;
+  opacity: 0.8;
+}
+
+.starshiplist li {
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.starshiplist:hover {
+  opacity: 1;
+}
+
+.starshiplist li:hover {
+  opacity: 0.5;
 }
