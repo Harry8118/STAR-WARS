@@ -4,48 +4,88 @@
   box-sizing: border-box;
 }
 
-ul,
-li {
-  list-style: none;
-}
-
-.App {
-  background-image: url("./image/bgImage.jpeg");
+.main {
+  display: flex;
+  justify-content: space-between;
   height: 100vh;
-  width: 100vw;
 }
-
+.information {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid yellow;
+  padding: 10px 40px;
+  background-color: black;
+  color: yellow;
+}
 .pagetitle {
-  color: red;
+  text-decoration: underline yellow;
   text-align: center;
   font-size: 80px;
+  margin-bottom: 10px;
+  line-height: 2;
 }
 
 .description {
-  color: blue;
-  margin: 80px 40px 0 40px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
-.starshiplist {
-  width: 80%;
+.tablewrap {
+  margin-top: 30px;
+  background-color: #212529;
+  color: #fff;
+}
+
+.tablecontent {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  top: 25px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.line2 {
+  left: -7px;
+  position: absolute;
+  height: 100%;
+  border-left: 1px solid #fff;
+}
+
+.col {
+  position: relative;
   display: flex;
   flex-direction: column;
-  background-color: green;
-  margin: 60px 40px;
-  opacity: 0.8;
+  align-items: flex-start;
 }
 
-.starshiplist li {
-  color: red;
-  font-size: 20px;
+.coltitle {
+  padding-bottom: 10px;
+}
+
+.buttoncol {
+  justify-content: inherit;
+}
+
+button {
+  border: 1px solid yellow;
+  border-radius: 8px;
   cursor: pointer;
+  padding: 3px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  margin-right: 3px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
-.starshiplist:hover {
-  opacity: 1;
-}
-
-.starshiplist li:hover {
-  opacity: 0.5;
+.logo {
+  width: 200px;
 }
